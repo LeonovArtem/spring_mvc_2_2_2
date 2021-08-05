@@ -3,9 +3,9 @@ package web.model;
 public class Car {
     private String model;
     private int series;
-    private CarColor color;
+    private String color;
 
-    public Car(String model, int series, CarColor color) {
+    public Car(String model, int series, String color) {
         this.model = model;
         this.series = series;
         this.color = color;
@@ -27,11 +27,11 @@ public class Car {
         this.series = series;
     }
 
-    public CarColor getColor() {
+    public String getColor() {
         return color;
     }
 
-    public void setColor(CarColor color) {
+    public void setColor(String color) {
         this.color = color;
     }
 }
